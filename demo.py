@@ -11,7 +11,7 @@ print("CUDA available:", torch.cuda.is_available())
 print("GPU name:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "None")
 
 corpus = [
-    "hello friends how are you",
+    "hello everyone, welcome to the world of transformers",
     "the tea is very hot",
     "my name is Aarohi",
     "the roads of Delhi are busy",
