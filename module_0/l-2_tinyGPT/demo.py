@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import random
 
+# Import block transformer digunakan untuk membangun model TinyGPT
 from transformer_blocks import Block
 
 
@@ -12,8 +13,8 @@ print("GPU name:", torch.cuda.get_device_name(0) if torch.cuda.is_available() el
 
 corpus = [
     "hello everyone, good morning",
-    "the tea is very hot",
     "my name is lisa",
+    "the tea is very hot",
     "the roads of Unesa are busy",
     "it is raining in",
     "the train is late again",
