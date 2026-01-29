@@ -147,7 +147,7 @@ Atau jika menggunakan GPU CUDA:
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-## 💻 Penggunaan
+## Penggunaan
 
 ### 1. Jalankan Demo Script
 
@@ -181,7 +181,7 @@ corpus = [
 ]
 ```
 
-## 🧠 Penjelasan Algoritma
+## Penjelasan Algoritma
 
 ### Self-Attention Mechanism
 
@@ -222,7 +222,7 @@ Model dilatih menggunakan **cross-entropy loss** dengan optimasi menggunakan **A
 3. Backward pass: `loss.backward()`
 4. Update weights: `optimizer.step()`
 
-## 📊 Hasil dan Generasi Teks
+## Hasil dan Generasi Teks
 
 Setelah training, model dapat menghasilkan teks baru:
 
@@ -247,7 +247,7 @@ hello everyone good morning the roads of Unesa are busy the train is late
 4. Tambahkan token baru ke sequence
 5. Ulangi sampai panjang maksimal tercapai
 
-## 🔍 Penjelasan Parameter
+## Penjelasan Parameter
 
 | Parameter       | Deskripsi                                        | Default |
 | --------------- | ------------------------------------------------ | ------- |
@@ -259,7 +259,7 @@ hello everyone good morning the roads of Unesa are busy the train is late
 | `epochs`        | Jumlah iterasi training                          | 1500    |
 | `batch_size`    | Ukuran batch dalam `get_batch()`                 | 16      |
 
-## 📈 Improvement dan Saran
+## Improvement dan Saran
 
 Untuk meningkatkan performa model:
 
@@ -271,7 +271,7 @@ Untuk meningkatkan performa model:
 6. **Dropout**: Tambahkan dropout layers untuk regularisasi
 7. **Beam Search**: Implementasi beam search untuk generasi teks yang lebih baik
 
-## 🐛 Debugging
+## Debugging
 
 ### Model Tidak Konvergen
 
@@ -291,45 +291,9 @@ Untuk meningkatkan performa model:
 - Tambah epochs
 - Tingkatkan model capacity (embedding_dim, n_layers)
 
-## 📚 Referensi
+## Referensi
 
-- **Attention Is All You Need**: Vaswani et al., 2017
-  - Paper: https://arxiv.org/abs/1706.03762
-- **Language Models are Unsupervised Multitask Learners**: Radford et al., 2019
-  - Paper: https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
-
-- **PyTorch Documentation**: https://pytorch.org/docs/stable/index.html
-
-## 📄 Lisensi
-
-Proyek ini tersedia di bawah lisensi MIT. Silakan gunakan dan modifikasi untuk tujuan pembelajaran maupun komersial.
-
-## 👥 Kontribusi
-
-Kontribusi sangat diterima! Berikut cara berkontribusi:
-
-1. Fork repository
-2. Buat branch fitur (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buka Pull Request
-
-## ❓ FAQ
-
-**Q: Bagaimana cara menggunakan model yang sudah dilatih?**
-A: Simpan model menggunakan `torch.save(model.state_dict(), 'model.pth')` dan load dengan `model.load_state_dict(torch.load('model.pth'))`.
-
-**Q: Bisakah saya menggunakan dataset yang lebih besar?**
-A: Ya, ubah `corpus` dengan data yang lebih besar. Untuk dataset sangat besar, pertimbangkan streaming data atau chunking.
-
-**Q: Bagaimana performa pada GPU vs CPU?**
-A: GPU akan jauh lebih cepat untuk model yang lebih besar. Pindahkan model ke GPU dengan `.to('cuda')`.
-
-**Q: Apakah model dapat melakukan fine-tuning?**
-A: Ya, Anda dapat melanjutkan training dari checkpoint yang tersimpan atau transfer learning.
-
----
-
-**Dibuat dengan ❤️ untuk pembelajaran AI dan Deep Learning**
+- **Build a Mini GPT Model From Scratch Using PyTorch**: Code With Aarohi., 2025
+  - Paper: https://youtu.be/5BQZEQUL9-k?si=KXaucf7kFsubCZ3D
 
 Terakhir diupdate: Januari 2026
